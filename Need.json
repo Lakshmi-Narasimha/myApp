@@ -1,0 +1,344 @@
+Find Agent :
+ 
+ 
+https://mobile-nqa.vzw.com/mfchat/rest/agent
+ 
+Request :
+ 
+{"RequestParams":{"agentGroupID":"Billing"},"deepLink":false,"firstTimeTnCSkipped":false,"userNamePwdFlow":false,"notified":false,"rememberMe":false,"setReminder":false}
+ 
+
+Response: 
+{
+  "ModuleMap" : {
+    "Support" : {
+      "msgList" : [
+
+      ],
+      "startMsgId" : 10000,
+      "searchStartIndex" : 10000,
+      "ResponseInfo" : {
+        "locale" : "en",
+        "userMessage" : "An expert will join you shortly",
+        "code" : "00000",
+        "messageStyle" : "TopPersistent",
+        "message" : "Waiting for live chat",
+        "topMessage" : "Your live chat will start soon",
+        "buildNumber" : "207",
+        "type" : "ChatTop",
+        "requestId" : "f01926d1-db5f-4035-84d7-2c7eeb4ecd0f",
+        "buttonTitle" : "View"
+      }
+    }
+  },
+  "Page" : {
+    "status" : "online",
+    "pageType" : "livechat",
+    "parentPageType" : "myData",
+    "availability" : "true",
+    "inHOP" : "true",
+    "callType" : "agent",
+    "timeToWait" : "5",
+    "showChatHistory" : false,
+    "agentBusy" : false
+  },
+  "sessionOver" : false,
+  "ResponseInfo" : {
+    "locale" : "en",
+    "buildNumber" : "207",
+    "code" : "00000",
+    "requestId" : "9afe0b3f-a232-47df-80bf-b9f8e68de25e",
+    "type" : "Success"
+  }
+}
+
+
+ 
+Get session ID:
+ 
+https://mobile-nqa.vzw.com/mfchat/rest/engagement
+ 
+Request :
+ 
+{"RequestParams":{"VATranscript":[{"message":"Welcome back, Lebowski. How can I help?","type":"VA"},{"message":"Show me how to contact Verizon.","type":"VA"},{"message":"Chat with us right here","type":"VA"},{"message":"Understanding my bill","type":"VA"},{"message":"Thanks. What do you want to know about your bill?","type":"VA"},{"message":"hey namki","type":"User"}],"InitialMessage":"hey namki","nickName":"Lebowski","accRole":"Account Owner","MDN":"8434083258","InitialParams":{"appName":"com.vzw.hss.myverizon","appVersion":"12.6.4","carrier":"verizon","model":"SM-G928V","osName":"Android","osVersion":"6.0.1","deviceName":"zenltevzw","formFactor":"handset","sourceServer":"None","timeZone":"EST","wifi":true,"uuid":"816f094c-d202-4e65-9c87-9ba67fa47d7a","searchSource":"NLP","sourceID":"mvmrc","showFirstBillInterstitial":false,"SSO":{"ssoToken":"iIFu97qeLT1lDLGGbqz0IVlFAkgydummyssovalue\u003d","mdn":"8434083258"},"DeviceMDNHashMap":{"deviceH":"-5650311312004273541","deviceM":"8434083258","hashType":"SSO"},"RememberMeHashMap":[{"h":"-5167652797279632789VZ-3897523051773832451","m":"8434083258","u":"8434083258","mvmHash":false}],"usersAcceptedMFTermsAndConditions":["jCgcIU1DIamIrriWXdH/MXsZwF7yvRujN87Osw3p4zE\u003d"],"countryName":""},"agentGroupID":"Billing","encryptedMdn":"GoLE+5Gtk29CLpSkfRspqw\u003d\u003d"},"deepLink":false,"firstTimeTnCSkipped":false,"userNamePwdFlow":false,"notified":false,"rememberMe":false,"setReminder":false}
+ 
+Response:
+
+{
+  "ModuleMap" : {
+    "Support" : {
+      "msgList" : [
+        {
+          "state" : "assigned",
+          "agentGroupID" : "10004688",
+          "sequenceNumberInt" : 2,
+          "messageList" : [
+            {
+              "loginReq" : false,
+              "messageText" : "VZW MobApp Tester joined the conversation"
+            }
+          ],
+          "animationDuration" : 800,
+          "type" : "header",
+          "msgId" : 10000,
+          "messageType" : "stateChange",
+          "sequenceNumber" : "2"
+        }
+      ],
+      "startMsgId" : 10000,
+      "searchStartIndex" : 10000,
+      "ResponseInfo" : {
+        "locale" : "en",
+        "buildNumber" : "207",
+        "code" : "00000",
+        "requestId" : "dcc06d18-64cf-4823-a53b-05ed2733b2c0",
+        "type" : "Success",
+        "topMessage" : "You're chatting with VZW MobApp Tester"
+      }
+    }
+  },
+  "Page" : {
+    "status" : "accepted",
+    "pageType" : "livechat",
+    "parentPageType" : "myData",
+    "agentName" : "VZW MobApp Tester",
+    "agentID" : "vzw-mobile-app-03",
+    "callType" : "engagement",
+    "timeToWait" : null,
+    "engagementID" : "-1196452972424366591",
+    "showChatHistory" : true,
+    "agentBusy" : false
+  },
+  "sessionOver" : false,
+  "ResponseInfo" : {
+    "locale" : "en",
+    "buildNumber" : "207",
+    "code" : "00000",
+    "requestId" : "dcc06d18-64cf-4823-a53b-05ed2733b2c0",
+    "type" : "Success",
+    "topMessage" : "You're chatting with VZW MobApp Tester"
+  }
+}
+
+
+ 
+
+
+Customer is Typing
+ 
+https://mobile-nqa.vzw.com/mfchat/rest/customerIsTyping
+12-16 11:39:53.581  27333-27333/? D/ResourceServiceRequestor: ResourceServiceRequestor Request : {"RequestParams":{"isTyping":true,"engagementID":"2166610014155340745"},"deepLink":false,"firstTimeTnCSkipped":false,"userNamePwdFlow":false,"notified":false,"rememberMe":false,"setReminder":false}
+ 
+Response: 
+
+{
+  "ModuleMap" : {
+    "Support" : {
+      "msgList" : [
+
+      ],
+      "startMsgId" : 10000,
+      "searchStartIndex" : 10000,
+      "ResponseInfo" : {
+        "locale" : "en",
+        "buildNumber" : "207",
+        "code" : "00000",
+        "requestId" : "c3446753-f8c7-4fc8-9fb3-451f9a3ab34a",
+        "type" : "Success"
+      }
+    }
+  },
+  "Page" : {
+    "showChatHistory" : false,
+    "parentPageType" : "myData",
+    "agentBusy" : false,
+    "callType" : null,
+    "timeToWait" : null,
+    "pageType" : "livechat"
+  },
+  "sessionOver" : false,
+  "ResponseInfo" : {
+    "locale" : "en",
+    "buildNumber" : "207",
+    "code" : "00000",
+    "requestId" : "c3446753-f8c7-4fc8-9fb3-451f9a3ab34a",
+    "type" : "Success"
+  }
+}
+
+
+
+ 
+Send messaGE :
+ 
+https://mobile-nqa.vzw.com/mfchat/rest/message
+{"RequestParams":{"engagementID":"2166610014155340745","messageText":"ff"},"deepLink":false,"firstTimeTnCSkipped":false,"userNamePwdFlow":false,"notified":false,"rememberMe":false,"setReminder":false}
+ 
+Response:
+
+{
+  "ModuleMap" : {
+    "Support" : {
+      "msgList" : [
+
+      ],
+      "startMsgId" : 10000,
+      "searchStartIndex" : 10000,
+      "ResponseInfo" : {
+        "locale" : "en",
+        "buildNumber" : "207",
+        "code" : "00000",
+        "requestId" : "fe225440-2751-4314-a8f4-4f2aeb02d104",
+        "type" : "Success"
+      }
+    }
+  },
+  "Page" : {
+    "showChatHistory" : false,
+    "parentPageType" : "myData",
+    "agentBusy" : false,
+    "callType" : "sendMessage",
+    "timeToWait" : null,
+    "pageType" : "livechat"
+  },
+  "sessionOver" : false,
+  "ResponseInfo" : {
+    "locale" : "en",
+    "buildNumber" : "207",
+    "code" : "00000",
+    "requestId" : "fe225440-2751-4314-a8f4-4f2aeb02d104",
+    "type" : "Success"
+  }
+}
+ 
+Pooling :
+ 
+https://mobile-nqa.vzw.com/mfchat/rest/message/2166610014155340745
+ 
+12-16 11:43:04.901  27333-27398/? D/ResourceServiceChat: Request {"deepLink":false,"firstTimeTnCSkipped":false,"userNamePwdFlow":false,"notified":false,"rememberMe":false,"setReminder":false}
+ 
+Response: 
+
+{
+
+  "ModuleMap" : {
+    "Support" : {
+      "msgList" : [
+        {
+          "messageList" : [
+            {
+              "loginReq" : false,
+              "messageText" : "hi"
+            }
+          ],
+          "sequenceNumberInt" : 6,
+          "animationDuration" : 800,
+          "type" : "chat",
+          "msgId" : 10004,
+          "messageType" : "chatLine",
+          "sequenceNumber" : "6"
+        }
+      ],
+      "startMsgId" : 10004,
+      "searchStartIndex" : 10000,
+      "ResponseInfo" : {
+        "locale" : "en",
+        "buildNumber" : "207",
+        "code" : "00000",
+        "requestId" : "d2c221d2-502a-402a-b2fd-2881fca6d9a5",
+        "type" : "Success"
+      }
+    }
+  },
+  "Page" : {
+    "status" : "accepted",
+    "pageType" : "livechat",
+    "parentPageType" : "myData",
+    "agentID" : "vzw-mobile-app-03",
+    "callType" : "getMessage",
+    "timeToWait" : null,
+    "engagementID" : "-1196452972424366591",
+    "showChatHistory" : false,
+    "agentBusy" : false
+  },
+  "sessionOver" : false,
+  "ResponseInfo" : {
+    "locale" : "en",
+    "buildNumber" : "207",
+    "code" : "00000",
+    "requestId" : "d2c221d2-502a-402a-b2fd-2881fca6d9a5",
+    "type" : "Success"
+  }
+}
+ 
+End Chat :
+ 
+https://mobile-nqa.vzw.com/mfchat/rest/message
+12-16 11:51:16.551  27333-27333/? D/ResourceServiceRequestor: ResourceServiceRequestor Request : {"RequestParams":{"engagementID":"2166610014155340745","messageType":"stateChange","state":"closed"},"deepLink":false,"firstTimeTnCSkipped":false,"userNamePwdFlow":false,"notified":false,"rememberMe":false,"setReminder":false}
+
+Response :
+
+{
+  "ModuleMap" : {
+    "Support" : {
+      "msgList" : [
+        {
+          "messageList" : [
+            {
+              "nextmsgId" : 20001,
+              "loginReq" : false,
+              "messageText" : "Thank you for chatting with Verizon Wireless"
+            }
+          ],
+          "sequenceNumberInt" : 20000,
+          "animationDuration" : 800,
+          "type" : "header",
+          "msgId" : 20000,
+          "messageType" : "stateChange",
+          "state" : "closed"
+        },
+        {
+          "sequenceNumberInt" : 20000,
+          "msgId" : 20001,
+          "animationDuration" : 800,
+          "type" : "bot",
+          "messageList" : [
+            {
+              "nextmsgId" : -1,
+              "loginReq" : false,
+              "messageText" : "Let me know if you need anything else. I'm always here for you."
+            }
+          ]
+        }
+      ],
+      "startMsgId" : 20000,
+      "searchStartIndex" : 10000,
+      "ResponseInfo" : {
+        "locale" : "en",
+        "buildNumber" : "207",
+        "code" : "00000",
+        "requestId" : "2edfe2c1-970f-4cfe-974d-d458d5f2525a",
+        "type" : "Success"
+      }
+    }
+  },
+  "Page" : {
+    "status" : "accepted",
+    "pageType" : "livechat",
+    "parentPageType" : "myData",
+    "callType" : "getMessage",
+    "timeToWait" : null,
+    "customerID" : "-1196452972424641378",
+    "engagementID" : "-1196452972424366591",
+    "showChatHistory" : false,
+    "agentBusy" : false
+  },
+  "sessionOver" : false,
+  "ResponseInfo" : {
+    "locale" : "en",
+    "buildNumber" : "207",
+    "code" : "00000",
+    "requestId" : "2edfe2c1-970f-4cfe-974d-d458d5f2525a",
+    "type" : "Success"
+  }
+}
